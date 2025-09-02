@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+/* Header */
+.top-bar {
+    background: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 14px;
+}
+.top-bar .socials a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eee;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between image and text */
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+}
+.logo-img {
+  width: 40px; /* adjust logo size */
+  height: auto;
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.menu a.active {
+    color: #007bff;
+}
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 80px;
+    text-align: center;
+}
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.services p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card h3 {
+    margin: 15px 0 10px;
+}
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* Call to Action */
+.cta {
+    background: #007bff;
+    color: #fff;
+    padding: 60px 80px;
+}
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cta-content img {
+    max-width: 800px;
+    border-radius: 10px;
+}
+.cta-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.cta-content p {
+    margin-bottom: 20px;
+}
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cta-buttons .phone {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* Footer */
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between image and text */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 32px;  /* adjust to your preferred size */
+  height: auto;
+}
+footer {
+    background: #f8f8f8;
+    padding-top: 40px;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 50px 30px;
+}
+.footer-logo h3 {
+    color: #007bff;
+    font-size: 24px;
+}
+.footer-logo p {
+    color: #666;
+    margin: 15px 0;
+}
+.footer-logo .socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.footer-menu h4, .newsletter h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-menu ul {
+    list-style: none;
+}
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.newsletter input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.newsletter button {
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer-bottom {
+    background: #eaeaea;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+}
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit; /* makes icon/text use current text color */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.email-icon {
+  width: 24px;
+  height: 24px;
+  color: #0073e6; /* blue for email icon */
+}
+.phone-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.phone-icon {
+  width: 50px;
+  height: 30px;
+  color: #1a73e8; 
+  display: inline-block;
+}
+.address-row {
+  display: inline-flex;        
+  align-items: center;        
+  gap: 10px;                   
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.address-icon {
+  width: 22px;               
+  height: 22px;
+  object-fit: contain;
+  display: inline-block;
+}
+.icon {
+    width: 16px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.social-icon {
+    width: 20px;          
+    height: 20px;      
+    object-fit: cover;  
+    vertical-align: middle; 
+}
+.gmail-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.face-icon{
+     width: 20px;
+    height: 20px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.twet-icon {
+    width: 20px;         
+    height: 20px;
+    object-fit: cover;  
+    vertical-align: middle;
+}
+.email-icon{
+     width: 20px;
+    height: 20px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
